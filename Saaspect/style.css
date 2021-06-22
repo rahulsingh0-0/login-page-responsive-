@@ -1,0 +1,458 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --display: flex;
+  --align-items: center;
+  --justify-content: center;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: var(--display);
+  align-items: var(--align-items);
+  justify-content: var(--justify-content);
+}
+/* not that helpful ,not using variables*/
+
+.login-form {
+  height: 70%;
+  width: 40%;
+  background: whitesmoke;
+  border-radius: 7%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+.inp {
+  margin-left: 20px;
+  height: 40px;
+  width: 310px;
+  border-radius: 5px;
+  text-align: left;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.inp2 {
+  margin-left: 24px;
+  height: 40px;
+  width: 310px;
+  border-radius: 5px;
+  text-align: left;
+  border-radius: 4px;
+  font-size: 16px;
+  position: relative;
+  right: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.email,
+.password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
+.lab {
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  color: black;
+}
+.forgot-pas {
+  text-align: center;
+}
+.forgot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#btn-login {
+  margin: 26px;
+  padding: 9px;
+  width: 80px;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: black;
+  border-radius: 7px;
+}
+#btn-login:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+  color: black;
+  transition: 600ms all ease;
+}
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+p,
+a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: 2px solid underline black;
+}
+img {
+  height: 45px;
+  width: 45px;
+  margin: 10px;
+  padding: 7px;
+}
+.sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clipart {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+  position: absolute;
+  clip-path: polygon(100% 55%, 0% 100%, 100% 100%);
+  z-index: -1;
+}
+
+/* applying media queries for responsiveness */
+
+@media (max-width: 1025px) {
+  .login-form {
+    width: 80%;
+    height: 70%;
+  }
+  .lab {
+    font-size: 30px;
+  }
+  .inp,
+  .inp2 {
+    width: 450px;
+    height: 80px;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+  .login {
+    font-size: 27px;
+  }
+  #btn-login {
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+  }
+  a,
+  p {
+    font-size: 22px;
+  }
+  img {
+    height: 65px;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+  }
+  .clipart {
+    clip-path: polygon(100% 65%, 0% 100%, 100% 100%);
+  }
+}
+
+@media (max-width: 1025px) {
+  .login-form {
+    width: 80%;
+    height: 80%;
+  }
+  .lab {
+    font-size: 30px;
+  }
+  .inp,
+  .inp2 {
+    width: 450px;
+    height: 80px;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+  .login {
+    font-size: 27px;
+  }
+  #btn-login {
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+  }
+  a,
+  p {
+    font-size: 22px;
+  }
+  img {
+    height: 65px;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+  }
+  .clipart {
+    clip-path: polygon(100% 65%, 0% 100%, 100% 100%);
+  }
+}
+
+@media (max-width: 769px) {
+  .login-form {
+    width: 80%;
+    height: 60%;
+  }
+  .lab {
+    font-size: 24px;
+  }
+  .inp,
+  .inp2 {
+    width: 350px;
+    height: 50px;
+    font-size: 22px;
+  }
+  .login {
+    font-size: 27px;
+  }
+  #btn-login {
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+  }
+  a,
+  p {
+    font-size: 22px;
+  }
+  img {
+    height: 65px;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+  }
+  .clipart {
+    clip-path: polygon(100% 65%, 0% 100%, 100% 100%);
+  }
+}
+@media (max-width: 870px) {
+  .login-form {
+    width: 80%;
+    height: 80%;
+  }
+  .lab {
+    font-size: 24px;
+  }
+  .inp,
+  .inp2 {
+    width: 350px;
+    height: 50px;
+    font-size: 22px;
+  }
+  .login {
+    font-size: 27px;
+  }
+  #btn-login {
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+  }
+  a,
+  p {
+    font-size: 22px;
+  }
+  img {
+    height: 65px;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+  }
+  .clipart {
+    clip-path: polygon(100% 65%, 0% 100%, 100% 100%);
+  }
+}
+@media (max-width: 541px) {
+  .login-form {
+    width: 80%;
+    height: 75%;
+  }
+  .lab {
+    font-size: 20px;
+  }
+  .inp {
+    width: 212px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    font: 16px;
+  }
+  .inp2 {
+    width: 210px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .login {
+    font-size: 24px;
+  }
+  a,
+  p {
+    font-size: 16px;
+  }
+  .clipart {
+    clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
+  }
+}
+
+@media (max-width: 415px) {
+  .login-form {
+    width: 80%;
+    height: 70%;
+  }
+  .lab {
+    font-size: 17px;
+  }
+  .inp {
+    width: 152px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+    font: 16px;
+  }
+  .inp2 {
+    width: 155px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-right: -8px;
+  }
+  .login {
+    font-size: 20px;
+  }
+  a,
+  p {
+    font-size: 16px;
+  }
+  .clipart {
+    clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
+  }
+}
+@media (max-width: 412px) {
+  .login-form {
+    width: 85%;
+    height: 80%;
+  }
+  .lab {
+    font-size: 16px;
+  }
+  .inp {
+    width: 160px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .inp2 {
+    width: 160px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-right: -8px;
+  }
+  .login {
+    font-size: 22px;
+  }
+  a,
+  p {
+    font-size: 14px;
+  }
+  .clipart {
+    clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
+  }
+}
+@media (max-width: 361px) {
+  .login-form {
+    width: 80%;
+    height: 70%;
+  }
+  .lab {
+    font-size: 14px;
+    border-radius: none;
+  }
+  .inp,
+  .inp2 {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .inp2 {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-right: -8px;
+  }
+  .login {
+    font-size: 20px;
+  }
+  a,
+  p {
+    font-size: 14px;
+  }
+  img {
+    height: 45px;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+  }
+  #btn-login {
+    height: 40px;
+    width: 70px;
+    font-size: 15px;
+  }
+  .clipart {
+    clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
+  }
+}
+@media (max-width: 321px) {
+  .login-form {
+    width: 80%;
+    height: 80%;
+  }
+  .lab {
+    font-size: 12px;
+  }
+  #btn-login {
+    height: 40px;
+    width: 80px;
+    font-size: 14px;
+  }
+  .inp,
+  .inp2 {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .login {
+    font-size: 20px;
+  }
+  a,
+  p {
+    font-size: 12px;
+  }
+  .clipart {
+    clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
+  }
+}
